@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AyurTrace</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #fef3c7 0%, #a7f3d0 100%);
+        }
+        .contact-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
+        }
+        .form-icon-name {
+            background-repeat: no-repeat;
+            background-position: 12px center;
+            padding-left: 44px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.15"><path d="M50 20c-10 0-18 8-18 18s8 18 18 18 18-8 18-18-8-18-18-18zm0 24c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6z"/></svg>');
+            background-size: 40px;
+        }
+        .form-icon-email {
+            background-repeat: no-repeat;
+            background-position: 12px center;
+            padding-left: 44px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.15"><path d="M20 30l30 20 30-20m-50 40h60v-40h-60v40z"/></svg>');
+            background-size: 40px;
+        }
+        .form-icon-message {
+            background-repeat: no-repeat;
+            background-position: 12px center;
+            padding-left: 44px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.15"><path d="M20 20h60v40l-20-20h-20l-20 20v-40z"/></svg>');
+            background-size: 40px;
+        }
+        .btn-hover {
+            transition: all 0.4s ease-in-out;
+        }
+        .btn-hover:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            background: radial-gradient(circle, #f59e0b, #b45309);
+        }
+        .icon-hover {
+            transition: all 0.4s ease-in-out;
+        }
+        .icon-hover:hover {
+            transform: scale(1.3) rotate(10deg);
+            stroke: #f59e0b;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="gradient-bg font-sans">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-emerald-900 to-emerald-600 text-white py-12 shadow-lg border-b-2 border-amber-200">
+        <div class="container mx-auto px-6 flex items-center">
+            <div>
+                <h1 class="text-5xl font-bold tracking-wider text-shadow-lg">AyurTrace</h1>
+                <p class="mt-3 text-xl font-light tracking-wide">Transparent Traceability for Ayurvedic Herbs</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white py-5 sticky top-0 z-10 shadow-md">
+        <div class="container mx-auto px-6 flex justify-center space-x-10">
+
+            <a href="contact.html" class="text-amber-400 font-semibold text-lg border-b-2 border-amber-400 tracking-wide">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mx-auto px-6 py-24">
+        <h2 class="text-5xl font-bold text-center text-gray-800 mb-12 tracking-wider text-shadow-sm">Contact Us</h2>
+        <div class="max-w-4xl mx-auto contact-card rounded-3xl p-12">
+            <p class="text-center text-gray-500 text-lg mb-10 font-light tracking-wide">
+                Have questions or want to collaborate? Reach out to explore our blockchain-based traceability platform for Ayurvedic herbs.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-3xl font-semibold text-gray-800 mb-8 tracking-wide">Get in Touch</h3>
+                    <div class="space-y-6 text-gray-700 text-lg">
+                        <p class="flex items-center">
+                            <svg class="w-8 h-8 mr-4 text-emerald-600 icon-hover" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            <span><strong>Email:</strong> info@ayurtrace.com</span>
+                        </p>
+                        <p class="flex items-center">
+                            <svg class="w-8 h-8 mr-4 text-emerald-600 icon-hover" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <span><strong>Phone:</strong> +91-123-456-7890</span>
+                        </p>
+                        <p class="flex items-center">
+                            <svg class="w-8 h-8 mr-4 text-emerald-600 icon-hover" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <span><strong>Address:</strong> 123 Herbal Lane, Bengaluru, Karnataka, India</span>
+                        </p>
+                        <p class="flex items-center">
+                            <svg class="w-8 h-8 mr-4 text-emerald-600 icon-hover" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span><strong>Business Hours:</strong> Mon-Fri, 9 AM - 5 PM IST</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <div>
+                    <h3 class="text-3xl font-semibold text-gray-800 mb-8 tracking-wide">Send a Message</h3>
+                    <div class="space-y-6">
+                        <input type="text" placeholder="Your Name" class="w-full p-4 border border-gray-200 rounded-xl focus:outline-none focus:border-emerald-600 form-icon-name shadow-sm">
+                        <input type="email" placeholder="Your Email" class="w-full p-4 border border-gray-200 rounded-xl focus:outline-none focus:border-emerald-600 form-icon-email shadow-sm">
+                        <textarea placeholder="Your Message" rows="5" class="w-full p-4 border border-gray-200 rounded-xl focus:outline-none focus:border-emerald-600 form-icon-message shadow-sm"></textarea>
+                        <button class="w-full bg-amber-500 text-white font-semibold py-4 rounded-xl btn-hover hover:bg-amber-600">
+                            Send Message
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-sm font-light tracking-wide">&copy; 2025 AyurTrace. All rights reserved.</p>
+            <div class="mt-4 space-x-6">
+                <a href="#" class="text-sm hover:text-amber-400 transition duration-400 tracking-wide">Privacy Policy</a>
+                <a href="#" class="text-sm hover:text-amber-400 transition duration-400 tracking-wide">Terms of Service</a>
+                <a href="contact.html" class="text-sm hover:text-amber-400 transition duration-400 tracking-wide">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Basic JavaScript for Form Handling (Placeholder) -->
+    <script>
+        // Note: Form submission is not functional due to sandbox restrictions.
+        // Add your backend API or email service integration here for actual functionality.
+        document.querySelector('button').addEventListener('click', () => {
+            alert('Form submission is not enabled in this demo. Please integrate with a backend service.');
+        });
+    </script>
+</body>
+</html>
